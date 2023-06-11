@@ -1,0 +1,75 @@
+/* 3.0: Header section */
+
+.header{
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background: rgb(0, 0,0,0.4);
+}
+.header .logo{
+    width: 40%;
+}
+.header .logo img{
+    margin-top: 15px;
+    width: 20%;
+    
+}
+.header .navbar{
+    width: 60%;
+    list-style: none;
+    text-align: right;
+}
+.header .navbar > li{
+    display: inline-block;/*عملنا هادي الخاصية عشان نجيبهم جمب بعض وكمان نعطي طول وعرض براحتنا*/
+    text-align: right;
+}
+.header .navbar > li > a{
+    color: var(--whitecolor);
+    font-size: 14px;
+    text-decoration: none;
+    display: block;/*عملنا بلوك عشان البادنج تشتغل من كل الجهات بشكل مزبوط*/
+    padding: 30px 10px;/*عملنا البادنج لل أ مش لعنصر الليست نفسه عشان اوسع مساحة ال ا  والمساحة كلها تصير كليكبل*/
+}
+.header .navbar > li > a:after,
+.header .navbar > li > a.active:after
+{
+    content: "";
+    display: block;
+    height: 3px;
+    margin-top: 5px;
+    background-color: var(--maincolor);
+    transition: width .5s;
+}
+.header .navbar > li > a:after{
+    width: 0;
+}
+.header .navbar > li > a.active:after{
+    width: 100%;
+}
+.header .navbar > li > a:hover:after{/*لما اعمل هافر على أ هاتلي الافتر*/
+    width: 100%;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-menue{
+    position: absolute;
+    background-color: var(--maincolor);
+    width: 150px;
+    text-align: center;
+    left:-50%;
+    top:70%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s;
+}
+.dropdown-menue a{
+    color: var(--whitecolor);
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+.dropdown:hover .dropdown-menue{
+    visibility: visible;
+    opacity: 1;
+}

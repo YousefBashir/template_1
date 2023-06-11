@@ -1,0 +1,81 @@
+/* Portofolio */
+.protofolio{
+    background: var(--bg-color);
+}
+
+.protofolio-item{
+    width: 30%;
+    margin-bottom: 50px;
+    position: relative;
+    padding: 20px;
+}
+.protofolio-item img{
+    width: 100%;
+}
+.protofolio-item.mg{
+    margin: 0 5%;
+}
+.protofolio-item .protofolio-layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0,0, .5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s visibility .5s;
+    
+}
+.protofolio-item:hover .protofolio-layer{
+    opacity: 1;
+    visibility: visible;
+
+}
+.protofolio-layer .layer-info{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+    text-align: center;
+    width: 80%;
+}
+.protofolio-layer .category{
+    color: var(--maincolor);
+    display: block;
+    position: relative;
+    top: 10px;
+    transition: top .5s;
+    transition-delay: 0.2s;
+
+}
+.protofolio-layer .layer-content-title{
+    font-size: 20px;
+    color: var(--whitecolor);
+    position: relative;
+    top: 10px;
+    transition: top .5s;
+    transition-delay: .3s;
+
+
+}
+.protofolio-layer a{
+    color: var(--whitecolor);
+    position: relative;
+    top: 10px;
+    transition: top .5s;
+    transition-delay: .3s;
+}
+    
+.protofolio-layer a i{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--maincolor);
+    line-height: 40px;
+}
+.protofolio-item:hover .protofolio-layer .category,
+.protofolio-item:hover .protofolio-layer .layer-content-title,
+.protofolio-item:hover .protofolio-layer a{
+    top: 0;
+}

@@ -1,0 +1,29 @@
+/* testimonail section */
+.testimonial{
+    position: relative;;
+    background-image: url(../images/background/background3.webp);
+    background-attachment: fixed;
+    height: 400px;
+}
+.testimonail-content{
+    padding: 120px 0;
+    width: 80%;
+    margin: auto;
+}
+.testimonail-item{
+    width: 50%;
+    color: var(--whitecolor);
+}
+.top-layer img{
+    border-radius: 50%;
+    left: 10px;
+    top:10px;
+    position: absolute;
+}
+.testimonail-item .top-layer span{
+    color: var(--maincolor);
+}
+.testimonail-item .top-layer{
+    padding: 20px 2px 30px 100px;
+    position: relative;
+}

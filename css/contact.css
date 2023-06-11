@@ -1,0 +1,56 @@
+/* contact section */
+
+.contact-items{
+    margin-bottom: 30px;
+}
+.contact-item{
+    width: 33.3%;
+    text-align: center;
+}
+.contact-item i{
+    color: var(--maincolor);
+}
+.contact-title{
+    font-weight: bold;
+    margin-top: 10px;
+}
+.contact-desc{
+    color: var(--graycolor);
+    margin-top: 10px;
+}
+/* contact-form   */
+.form-items{
+    margin: auto;
+    width: 60%;
+}
+.form-items input{
+    height: 40px;
+    width:100% ;
+    border-radius: 3px;
+    background:#e8e8e8;
+    margin:10px 0;
+    padding: 8px;
+}
+#name, #email{
+    width: 48.6%;
+    
+}
+#email{
+    margin-left:10px
+}
+form:hover #name, #email,#subject,#message{
+    border-color: var(--maincolor);
+    border: 2;
+}
+.form-btn{
+    min-width: 160px;
+   border-radius: 5px;
+   padding: 15px 0;
+   border: 0;
+   cursor: pointer;
+   font-size: 18px;
+   text-align: center;
+   background-color: var(--maincolor);
+   display: block;
+   margin: auto;
+}

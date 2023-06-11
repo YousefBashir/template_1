@@ -1,0 +1,358 @@
+/* blog content */
+.blog-content{
+    overflow: hidden;
+}
+.main-post{
+    float: left;
+    width: 70%;
+    margin-right:30px
+}
+.blog-img img{
+    width: 100%;
+}
+.blog-details{
+    float: left;
+    width:25%;
+}
+/* search bar */
+.search{
+    overflow: hidden;
+    width: 100%;
+    border-radius: 3px;
+}
+.search .search-bar input{
+    padding: 10px;
+    /* font-size: 17px; */
+    float: left;
+    font-size: 17px;
+    width: 80%;
+    border: none;
+    background: var(--bg-color);
+
+}
+.search .search-bar button{
+    float: left;
+    width: 20%;
+    padding:10px;
+    color:var(--maincolor);
+    font-size: larger;
+    cursor: pointer;
+    border: none;
+    background: var(--bg-color);
+}
+/* category */
+.category{
+    padding-top: 5px;
+}
+.category-item{
+   overflow: hidden;
+   display: block;
+   width: 100%;
+   margin-top: 20px;
+   background: var(--bg-color);
+   padding: 10px 5px 10px 10px;
+   border-top:1px solid var(--graycolor) ;
+
+}
+.category-name{
+    float: left;
+    width: 80%;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.category-num{
+    float: right;
+    width: 20%;
+    font-size: 17px;
+    color: var(--maincolor);
+    text-align: right;
+
+}
+/* popular post */
+.post-items{
+    width: 100%;
+    overflow: hidden;
+    padding-top: 20px;
+}
+.post-img img{
+    width: 30%;
+    float: left;
+}
+.post-info{
+    width: 65%;
+    float: right;
+}
+.post-title{
+    padding-bottom: 5px;
+}
+.post-desc{
+    text-transform: capitalize;
+    color: var(--graycolor);
+}
+/* main post */
+.post-details{
+    overflow: hidden;
+    margin-top: 15px;
+}
+.post-details i{
+    float: left;
+    color: var(--maincolor);
+}
+.post-details .desc{
+    text-transform: capitalize;
+    font-size: 12px;
+    float: left;
+    padding:3px 7px ;
+}
+.details{
+    float: left;
+    margin-right:15px;
+}
+.main-post-title{
+    margin: 15px 0;
+    text-transform: capitalize;
+}
+.main-post-desc{
+    color: var(--graycolor);
+}
+/* tags content */
+.tags-content{
+    overflow: hidden;
+    margin-top: 40px;
+}
+.tags-title{
+    float: left;
+    margin: 5px 5px 0 0;
+}
+.tag-item{
+    float: left;
+    background: rgb(243, 241, 241);
+    padding:5px 5px;
+    margin-right: 5px;
+}
+.tage-icon{
+    float: left;
+    color: blue;
+    margin-right: 3px;
+}
+.tag-name{
+    float:left;
+    text-transform: capitalize;
+    color: black; 
+    font-size: 13px;   
+}
+/* published post */
+.published-post{
+    position: relative;
+    margin-top: 30px;
+    border: 1px solid rgb(224, 221, 221);
+    height: 150px;
+}
+.published-post img{
+    position: absolute;
+    width: 20%;
+    left: 10px;
+    top: 5px;
+}
+.person-name{
+    position: absolute;
+    left:23%;
+    top: 10px;
+    text-transform: uppercase;
+}
+.person-links{
+    position: absolute;
+    right: 5px;
+    list-style: none;
+    top:5px
+}
+.person-links li{
+    display: inline-block;
+}
+.person-links a{
+    display: block;
+    color:var(--whitecolor) ;
+    background: var(--maincolor);
+    margin: 0 3px;
+    padding: 5px;
+    border-radius: 2px;
+}
+.person-links i{
+    line-height: 15px;
+}
+.published-post-desc{
+    position: absolute;
+    left:23%;
+    top: 50%;
+    right:5px ;
+    color: var(--graycolor);
+}
+
+.published-post hr{
+    position: absolute;
+    left: 24%;
+    right: 5px;
+    top: 35%;
+    border-top: 1px solid gainsboro;
+}
+/* comments */
+.comments{
+    margin-top: 30px;
+}
+.comment-content{
+    position: relative;
+    border: 1px solid rgb(224, 221, 221);
+    height: 120px;
+}
+.comment-content img{
+    position: absolute;
+    width: 15%;
+    height: 90%;
+    left: 10px;
+    top: 5px;
+}
+.comment-person-name{
+    position: absolute;
+    left:19%;
+    top: 10px;
+    text-transform: uppercase;
+}
+.comment-content .comment-time{
+    position: absolute;
+    top: 20px;
+    left: 32%;
+    font-size: 12px;
+    color: var(--graycolor);
+    text-transform: uppercase;
+}
+.reply{
+    position: absolute;
+    right: 5px;
+    top: 5;
+    
+}
+.reply a{
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.comment-post-desc{
+    position: absolute;
+    left:19%;
+    top: 35%;
+    right:5px ;
+    color: var(--graycolor);
+}
+/* form item */
+.form-items{
+    width: 100%;
+    margin-top: 20px;
+}
+.form-items input{
+    height: 40px;
+    width:100% ;
+    border-radius: 3px;
+    background:#e8e8e8;
+    margin:10px 0;
+    padding: 8px;
+    border: none;
+}
+#name, #email{
+    width: 49%;
+    border: none;
+    
+}
+#email{
+    margin-left:10px
+}
+#message{
+    padding: 30px 5px;
+    text-transform: capitalize;
+}
+.form-btn{
+   min-width: 120px;
+   height: 50px;
+   border-radius: 5px;
+   padding: 10px 0;
+   border: 0;
+   cursor: pointer;
+   font-size: 18px;
+   text-align: center;
+   background-color: var(--maincolor);
+   display: block;
+   color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .published-post{
+    overflow: hidden; 
+    margin-top: 30px;
+    border: 1px solid rgb(224, 221, 221);
+    height: 170px;
+}
+.person-info{
+    width: 100%;
+    margin: 10px;
+}
+.person-img{
+    width: 20%;
+    float: left;
+}
+.person-info .person-name{
+    float: left;
+    text-transform: uppercase;
+    margin:3px 10px;    
+}
+.person-links{
+    float: right;
+    list-style: none;
+    padding: 0 20px;
+}
+.person-links li{
+    display: inline-block;
+}
+.person-links a{
+    display: block;
+    color:var(--whitecolor) ;
+    background: var(--maincolor);
+    margin: 0 3px;
+    padding: 5px;
+    border-radius: 2px;
+}
+.person-links i{
+    line-height: 15px;
+}
+hr{
+    margin: 50px 50px;
+} */

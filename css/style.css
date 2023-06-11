@@ -1,0 +1,139 @@
+/*
+first thing is looking for common things in css as whole in project
+Common things here is:
+-Container to put all project in(لاحظ المشروع كانه محطوط بالمنتصف فبروح بعمل كوتينر وبعطيه حجم مثلا 80% وبعدين بحطه في منتصف الشاشة)
+-the effects(زي الهوفر وغيرها بجمعها عشان مكررش الكود)
+-بتشوف باقي الاشياء المشتركة وبضيفها عادي جدا عشان عدم تكرار الكود
+-
+*/
+/* 
+    1.Common style
+    2.General style
+    3.Section
+        -3.0: Header section
+        -3.1: Home section
+        -3.2: About section
+        -3.3: Portifolio section
+        -3.4: Service section
+        -3.5: Price section
+        -3.6: Team section
+        -3.7: Blog section
+        -3.8: Contact section
+        -3.9: Fotter section
+/* Comoon Style*/
+ /*
+    -Container
+    -Opacity hover
+    -section header
+    -section padding
+    - hover effect 1(top-bottom)
+    -hover effect 2(left- right)
+  */
+  .overlay{
+    position: absolute;
+    width: 100%;/* من مساحة الاب نفسه الي هو كلاس الهوم كله*/
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);
+}
+.hover-opacity{
+    opacity: .5s;/* dont write transition:.5s because transition works on all things in element and we need to work just on opacity*/
+}
+.hover-opacity:hover{
+    opacity: 0.8;
+}
+.ltr-effect,.ttb-effect{
+    position: relative;
+}
+.ltr-effect:after,.ttb-effect:after{
+    position:absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #333;
+    z-index: -1;
+
+    /* you may note that left"0 ,right:0 top:0, bottom:0 insted of width 100% and height:100%*/
+}
+.ltr-effect:after{
+    width: 0;
+    transition: width 0.5s;
+}
+.ttb-effect:after{
+    height: 0;
+    transition: height 0.5s;
+}
+.ltr-effect:hover:after{
+    width: 100%;
+}
+.ttb-effect:hover:after{
+    height: 100%;
+    
+}
+/* general Css Style*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /*هاي معناها انه لو زودت padding او margin 
+    لا تزود على حجم العنصر نهائيا يعني البادنج والمارجن ياخدو من مساحة العنصر الموجود ولكن لا يضيفو مساحة  زيادة*/
+}
+.clear{
+    clear: both;
+}
+ul{
+    list-style: none;
+}
+:root{
+  --maincolor:#6195ff;
+  --graycolor:#999;
+  --whitecolor:#ffff;
+  --bg-color:#f9f9f9;
+
+}
+
+.container{
+    width: 80%;/*عشان الموقع ما يبدأ من الحواف*/
+    margin: auto; /*معناها وسطن اي عنصر بلوك في وسط الشاشة*/ 
+}
+
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: montserrat,sans-serif;
+}
+button{
+    font-family: inherit;
+
+}
+/*section header*/
+.pd-y{
+    padding: 60px 0;
+}
+.section-header{
+    text-align: center;
+}
+.section-header .section-title{
+    font-size: 35px;
+    color: black;   
+}
+.section-header .line{
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color:var(--maincolor);
+    margin: 0 auto 70px auto;
+}
+
+
+
+
+
+
+
+
+
